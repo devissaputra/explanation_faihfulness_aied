@@ -2,6 +2,8 @@
 
 [![CI](https://github.com/devissaputra/explanation_faithfulness_aied/actions/workflows/ci.yml/badge.svg)](https://github.com/devissaputra/explanation_faithfulness_aied/actions/workflows/ci.yml)
 
+
+**Category:** AI in Education
 **A small, reproducible lab for testing whether educational AI explanations track the model’s actual decision process.**
 
 > Research prototype. All bundled data and results are synthetic demonstrations. Nothing in this repository should be interpreted as evidence about real learners, teachers, or institutions.
@@ -12,7 +14,7 @@
 
 An explanation can sound convincing while being weakly connected to the prediction it claims to explain. This repo focuses on that gap. It provides model-agnostic metrics for comprehensiveness, sufficiency, and stability and keeps “plausible” separate from “faithful.”
 
-The engineering goal is simple: make the research logic inspectable. Every metric in the demo can be traced back to a small function, the demo data can be regenerated from a fixed seed, and the limitations are stated next to the claims rather than buried at the end.
+The evaluation separates prediction, attribution, perturbation, and stability checks so an explanation can be tested against what the model actually uses instead of judged only by how convincing it sounds.
 
 ## Research questions
 
@@ -32,7 +34,7 @@ The reference pipeline follows five stages:
 4. **Faithfulness metrics**
 5. **Stability audit**
 
-The current implementation is deliberately compact enough to audit. It is a foundation for a real study, not a theatrical “AI demo.”
+The baseline stays small enough to inspect end to end before connecting it to larger models or human explanation studies.
 
 ## Core outputs
 

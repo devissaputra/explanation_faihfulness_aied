@@ -1,5 +1,7 @@
 # Explanation Faithfulness for AIED
 
+[![CI](https://github.com/devissaputra/explanation_faithfulness_aied/actions/workflows/ci.yml/badge.svg)](https://github.com/devissaputra/explanation_faithfulness_aied/actions/workflows/ci.yml)
+
 **A small, reproducible lab for testing whether educational AI explanations track the model’s actual decision process.**
 
 > Research prototype. All bundled data and results are synthetic demonstrations. Nothing in this repository should be interpreted as evidence about real learners, teachers, or institutions.

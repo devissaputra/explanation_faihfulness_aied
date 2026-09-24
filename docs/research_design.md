@@ -8,7 +8,7 @@ An explanation can sound convincing while being weakly connected to the predicti
 
 1. Does removing top-attributed evidence materially change a model prediction?
 2. Are the selected explanatory features stable under small input perturbations?
-3. How do faithful explanations compare with persuasive but weakly grounded rationales?
+3. How does top-feature comprehensiveness compare with the supplied random-removal baseline?
 
 ## Baseline analytic pipeline
 

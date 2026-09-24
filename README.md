@@ -8,7 +8,7 @@
 
 > Research prototype. All bundled data and results are synthetic demonstrations. Nothing in this repository should be interpreted as evidence about real learners, teachers, or institutions.
 
-![Architecture](docs/images/architecture.png)
+![Architecture](docs/images/architecture.svg)
 
 ## Why this project exists
 
@@ -24,7 +24,7 @@ The evaluation separates prediction, attribution, perturbation, and stability ch
 
 ## What the repository does
 
-![Pipeline](docs/images/pipeline.png)
+![Pipeline](docs/images/pipeline.svg)
 
 The reference pipeline follows five stages:
 
@@ -44,9 +44,9 @@ The baseline stays small enough to inspect end to end before connecting it to la
 - `random_baseline_delta`
 - `faithfulness_index`
 
-![Synthetic demo dashboard](docs/images/demo_dashboard.png)
+![Synthetic demo dashboard](docs/images/demo_dashboard.svg)
 
-The dashboard above is generated from **synthetic data** and is included only to show what the analysis surface looks like. It is not a reported empirical result.
+The dashboard above is generated from **synthetic data** and is included only to show what the analysis surface looks like. It is not a reported empirical result and does not measure persuasiveness or human usefulness.
 
 ## Quick start
 
@@ -69,12 +69,12 @@ docker run --rm explanation_faithfulness_aied
 
 ```text
 explanation_faithfulness_aied/
-├── src/explanation_faithfulness_aied/        # core implementation and synthetic-data generator
-├── examples/demo.py        # end-to-end reproducible demo
-├── tests/                  # executable unit tests
-├── docs/                   # research design, data dictionary, references
-│   └── images/             # original project diagrams and demo visualisations
-├── results/                # synthetic demo outputs only
+├── src/explanation_faithfulness_aied/  # core implementation and synthetic-data generator
+├── examples/demo.py                    # end-to-end reproducible demo
+├── tests/                              # executable unit tests
+├── docs/                               # research design, data dictionary, references
+│   └── images/                         # auditable project diagrams
+├── results/                            # synthetic demo outputs only
 ├── config/default.yaml
 ├── Dockerfile
 ├── Makefile

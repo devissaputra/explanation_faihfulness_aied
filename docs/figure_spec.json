@@ -1,0 +1,42 @@
+{
+  "question": "Do chosen features retain and explain a prediction?",
+  "data": "Synthetic original, feature-removed and feature-only probabilities plus feature sets.",
+  "method": "Calculate clipped probability drops, set overlap and a declared weighted summary.",
+  "formula": "Comprehensiveness = max(0,p-p_without); sufficiency gap = max(0,p-p_only).",
+  "interpretation": "Jaccard overlap measures set stability. Clipping discards negative effects. The weighted faithfulness index is a heuristic on supplied synthetic probabilities, not a validated explanation metric or a model perturbation experiment.",
+  "status": "SYNTHETIC / RULE-BASED PROTOTYPE | no educational validity claim",
+  "source": "results/demo_metrics.json",
+  "rows": [
+    {
+      "label": "comprehensiveness",
+      "path": [
+        "comprehensiveness"
+      ],
+      "unit": "unitless"
+    },
+    {
+      "label": "sufficiency_gap",
+      "path": [
+        "sufficiency_gap"
+      ],
+      "unit": "unitless"
+    },
+    {
+      "label": "stability_jaccard",
+      "path": [
+        "stability_jaccard"
+      ],
+      "unit": "unitless"
+    },
+    {
+      "label": "faithfulness_index",
+      "path": [
+        "faithfulness_index"
+      ],
+      "unit": "unitless"
+    }
+  ],
+  "table_title": "Selected recorded values (units and context shown)",
+  "evidence_note": "See CALCULATIONS.md for data status, execution scope and interpretation.",
+  "finding": "This prototype makes explanation diagnostics explicit through probability-drop and feature-overlap calculations on synthetic cases. It distinguishes comprehensiveness, sufficiency gap, and stability, while labeling the combined index as a hand-weighted heuristic. The current software accepts supplied perturbation outputs; a substantive empirical study would need actual model interventions and suitable random-feature controls."
+}

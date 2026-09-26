@@ -1,5 +1,21 @@
 # Explanation Faithfulness for AIED
 
+This prototype makes explanation diagnostics explicit through probability-drop and feature-overlap calculations on synthetic cases. It distinguishes comprehensiveness, sufficiency gap, and stability, while labeling the combined index as a hand-weighted heuristic. The current software accepts supplied perturbation outputs; a substantive empirical study would need actual model interventions and suitable random-feature controls.
+
+## Start here
+
+- [Calculations, evidence and verification scope](CALCULATIONS.md)
+- [Figure sources and exact numerical paths](docs/figure_spec.json)
+- [Data status](data/README.md)
+
+![Study question, data, design and interpretation](assets/review_overview.svg)
+
+![Defined calculation and source-linked evidence](assets/review_calculations.svg)
+
+**Review scope:** The existing suite requires unavailable dependencies; no full-suite pass is claimed. The bundled demonstration executed successfully in this review.
+
+## Detailed project documentation
+
 [![CI](https://github.com/devissaputra/explanation_faithfulness_aied/actions/workflows/ci.yml/badge.svg)](https://github.com/devissaputra/explanation_faithfulness_aied/actions/workflows/ci.yml)
 
 
@@ -8,7 +24,6 @@
 
 > Research prototype. All bundled data and results are synthetic demonstrations. Nothing in this repository should be interpreted as evidence about real learners, teachers, or institutions.
 
-![Architecture](docs/images/architecture.svg)
 
 ## Why this project exists
 
@@ -24,7 +39,6 @@ The evaluation separates prediction, attribution, perturbation, and stability ch
 
 ## What the repository does
 
-![Pipeline](docs/images/pipeline.svg)
 
 The reference pipeline follows five stages:
 
@@ -44,7 +58,6 @@ The baseline stays small enough to inspect end to end before connecting it to la
 - `random_baseline_delta`
 - `faithfulness_index`
 
-![Synthetic demo dashboard](docs/images/demo_dashboard.svg)
 
 The dashboard above is generated from **synthetic data** and is included only to show what the analysis surface looks like. It is not a reported empirical result and does not measure persuasiveness or human usefulness.
 
@@ -83,7 +96,6 @@ explanation_faithfulness_aied/
 
 ## Research design in one picture
 
-![Research map](docs/images/research_map.svg)
 
 The fuller design rationale is in [`docs/research_design.md`](docs/research_design.md), including constructs, assumptions, validation steps, and a proposed empirical extension.
 

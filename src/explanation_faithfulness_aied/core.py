@@ -1,3 +1,7 @@
+# Calculation reading guide: ../CALCULATIONS.md (repository root).
+# Comprehensiveness = max(0,p-p_without); sufficiency gap = max(0,p-p_only).
+# Jaccard overlap measures set stability. Clipping discards negative effects. The weighted faithfulness index is a heuristic on supplied synthetic probabilities, not a validated explanation metric or a model perturbation experiment.
+
 from __future__ import annotations
 import numpy as np, pandas as pd
 
